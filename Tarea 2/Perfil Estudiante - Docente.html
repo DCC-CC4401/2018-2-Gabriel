@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Sistema de Coevaluaciones :: Perfil</title>
+</head>
+<body>
+<div id="navegacion_superior" class="navbar navbar-expand-sm nav bg-dark justify-content-between">
+    <h1 id="header">
+        <a class="navbar-brand text-light" href="#">Sistema de Coevaluaciones</a>
+    </h1>
+
+    <ul class="navbar-nav">
+        <li class="nav-item mt-1">
+            <form class="form-inline" action="#">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Buscar Alumno...">
+                </div>
+                <div class="input-group">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span>Buscar</span></button>
+                </div>
+            </form>
+            <p class="mb-0" style="color:#FFFFFF">
+                <input type="radio" class="radio" name="sc" id="sc[0]" value="0" onclick="this.form.submit()">
+                <label>Por Nombre</label>
+                <input type="radio" class="radio" name="sc" id="sc[1]" value="1" checked="checked" onclick="this.form.submit()">
+                <label>Por Rut</label>
+            </p>
+        </li>
+        <li class="nav-item mt-4 mx-4">
+            <a class="nav-link" href="#">Docente - Señor Gabriel</a>
+        </li>
+        <li class="nav-item mt-4">
+            <a class="nav-link" href="#">Salir</a>
+        </li>
+    </ul>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div id="sidebar" class="nav flex-column bg-primary col-lg-3 fill">
+            <span class="nav-link text-light mt-2 h3">Cursos Docentes</span>
+            <a class="nav-link text-light" href="#">CC4401-1 - Ingeniería de Software I</a>
+            <a class="nav-link text-light" href="#">CC4401-2 - Ingeniería de Software I</a>
+        </div>
+
+        <div id="content" class="col-9 mt-3">
+            <h2 style="text-align:left;float:left;">Mi Perfil</h2>
+            <hr style="clear:both;"/>
+
+            <div id="perfil" class="container">
+                <h4>Gabriel Gabriel</h4>
+                <h4>12345678-9</h4>
+
+                <h4>gabriel@gabriel.com</h4>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="table">
+                <table class="table">
+                    <caption></caption>
+                    <thead class="thead-dark">
+                    <tr class="odd">
+                        <th class="string" scope="col"><h2>Cursos</h2></th>
+                        <th class="detalle" scope="col"><h2>Detalle</h2></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="semestres table-secondary even">
+                        <td colspan="2"><h3>Semestre Primavera 2018</h3></td>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr class="odd">
+                        <td>
+                            <h5>CC4401 - Arquitectura de Computadores</h5>
+                            Sección 1
+                        </td>
+                        <td>
+                            <a href="#">Ver resumen</a>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td>
+                            <h5>CC4401 - Ingeniería de Software</h5>
+                            Sección 1
+                            <table align="center">
+                                <caption></caption>
+                                <thead>
+                                <tr>
+                                    <th>Coevaluación</th>
+                                    <th>Nota</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th><h6>Coevaluación 1</h6></th>
+                                    <th><h6>1.0</h6></th>
+                                </tr>
+                                <tr>
+                                    <th><h6>Coevaluación 2</h6></th>
+                                    <th><h6>4.5</h6></th>
+                                </tr>
+                                <tr>
+                                    <th><h6>Coevaluación 3</h6></th>
+                                    <th><h6>5.6</h6></th>
+                                </tr>
+                                <tr>
+                                    <th><h6>Coevaluación 4</h6></th>
+                                    <th><h6>6.5</h6></th>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </td>
+                        <td>
+                            <a href="#">Cerrar resumen</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr class="semestres table-secondary odd">
+                        <td colspan="2"><h3>Semestre Otoño 2018</h3></td>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr class="even">
+                        <td>
+                            <h5>CC3201 - Base de Datos</h5>
+                            Sección 1
+                        </td>
+                        <td>
+                            <a href="#">Ver resumen</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr class="semestres table-secondary odd">
+                        <td colspan="2"><h3>Semestre Primavera 2017</h3></td>
+                    </tr>
+                    </tbody>
+                    <tbody>
+                    <tr class="even">
+                        <td>
+                            <h5>FI2003 - Métodos Experimentales</h5>
+                            Sección 6
+                        </td>
+                        <td>
+                            <a href="#">Ver resumen</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Sistema de Coevaluaciones :: Coevaluación 1</title>
+</head>
+<body>
+<div id="navegacion_superior" class="navbar navbar-expand-sm nav bg-dark justify-content-between">
+    <h1 id="header">
+        <a class="navbar-brand text-light" href="#">Sistema de Coevaluaciones</a>
+    </h1>
+    <ul class="navbar-nav">
+        <li class="nav-item mt-1">
+            <form class="form-inline" action="#">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Buscar Alumno...">
+                </div>
+                <div class="input-group">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span>Buscar</span></button>
+                </div>
+            </form>
+            <p class="mb-0" style="color:#FFFFFF">
+                <input type="radio" class="radio" name="sc" id="sc[0]" value="0" onclick="this.form.submit()">
+                <label>Por Nombre</label>
+                <input type="radio" class="radio" name="sc" id="sc[1]" value="1" checked="checked" onclick="this.form.submit()">
+                <label>Por Rut</label>
+            </p>
+        </li>
+        <li class="nav-item mt-4 mx-4">
+            <a class="nav-link" href="#">Docente - Señor Gabriel</a>
+        </li>
+        <li class="nav-item mt-4">
+            <a class="nav-link" href="#">Salir</a>
+        </li>
+    </ul>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div id="sidebar" class="nav flex-column bg-primary col-lg-3 fill" style="height: 100vh">
+            <span class="nav-link text-light mt-2 h3">Cursos Docentes</span>
+            <a class="nav-link text-light" href="#">CC4401-1 - Ingeniería de Software I</a>
+            <a class="nav-link text-light" href="#">CC4401-2 - Ingeniería de Software I</a>
+        </div>
+
+        <div id="content" class="col-9 mt-3">
+            <h2>Coevaluación 1 CC4201 - Ingeniería de Software I</h2>
+            <h6>Sección 1 - Semestre Primavera 2018</h6>
+            <hr style="clear:both;"/>
+            <div id="estado" class="p-2 mb-2 bg-success text-white justify-content">
+                Estado de la Coevaluación: Activa
+            </div>
+            <div id="plazos" class="p-3 mb-2 bg-info text-white">Inicio: 3 de Octubre de 2018 | Fin: 18 de Octubre de 2018
+                <h6><a href="#" style="color:wheat" >Modificar plazos</a></div></h6>
+            <br>
+            <h2>Resultados Parciales</h2>
+            <br>
+
+            <div class="table">
+                <table class="table">
+                    <caption></caption>
+                    <thead class="thead-dark">
+                    <tr class="odd">
+                        <th class="string" scope="col"><h2>Pendientes</h2></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="pendientes table-secondary even">
+                        <td colspan="2"><h3>Nombre</h3></td>
+                    </tr>
+                    </tbody> <!-- Pendientes -->
+                    <tbody>
+                    <tr class="odd">
+                        <td colspan="2">
+                            <h5><a href="#">Alumno 1</a></h5>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td colspan="2">
+                            <h5><a href="#">Alumno 2</a></h5>
+                        </td>
+                    </tr>
+                    <tr class="odd">
+                        <td colspan="2">
+                            <h5><a href="#">Alumno 3</a></h5>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td colspan="2">
+                            <h5><a href="#">Alumno 4</a></h5>
+                        </td>
+                    </tr>
+
+                    <thead class="thead-dark">
+                    <tr class="odd">
+                        <th class="string" scope="col"><h2>Contestadas</h2></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="pendientes table-secondary even">
+                        <td><h3>Nombre</h3></td>
+                        <td><h3>Opciones</h3></td>
+                    </tr>
+                    </tbody> <!-- Contestadas -->
+                    <tbody>
+                    <tr class="odd">
+                        <td>
+                            <h5><a href="#">Alumno 5</a></h5>
+                        </td>
+                        <td>
+                            <h5><a href="#">Ver coevaluación</a></h5>
+                        </td>
+                    </tr>
+                    <tr class="odd">
+                        <td>
+                            <h5><a href="#">Alumno 6</a></h5>
+                        </td>
+                        <td>
+                            <h5><a href="#">Ver coevaluación</a></h5>
+                        </td>
+                    </tr>
+                    </tbody> <!-- Coeavaluaciones Contestadas-->
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
