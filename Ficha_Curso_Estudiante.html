@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Sistema de Coevaluaciones :: Ficha del Curso</title>
+</head>
+<body>
+<div id="navegacion_superior" class="navbar navbar-expand-sm nav bg-dark justify-content-between">
+    <a class="navbar-brand text-light" href="#">Sistema de Coevaluaciones</a>
+    <ul class="navbar-nav">
+        <li class="nav-item mx-4">
+            <a class="nav-link" href="#">Estudiante-Gabriel</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Salir</a>
+        </li>
+    </ul>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div id="sidebar" class="nav flex-column bg-primary col-lg-3 fill">
+            <span class="nav-link text-light mt-2 h3">Cursos Actuales</span>
+            <a class="nav-link text-light" href="#">CC4301 - Arquitectura de Computadores</a>
+            <a class="nav-link text-light" href="#">CC4401 - Ingeniería de Software I</a>
+
+        </div>
+
+        <div id="content" class="col-9 mt-3">
+            <h2>Ficha de CC4201 - Ingeniería de Software I</h2>
+            <h6>Sección 1 - Semestre Primavera 2018</h6>
+            <hr style="clear:both;"/>
+
+            <br>
+            <h3>Coevaluaciones</h3>
+            <br>
+
+            <div class="table">
+                <table class="table">
+                    <caption></caption>
+                    <thead class="thead-dark">
+                    <tr class="odd">
+                        <th class="string" scope="col"><h2>Pendientes</h2></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="pendientes table-secondary even">
+                        <td><h3>Nombre</h3></td>
+                        <td><h3>Fecha Inicio</h3></td>
+                        <td><h3>Fecha Fin</h3></td>
+                        <td colspan="2" align="center"><h3>Opciones</h3></td>
+                    </tr>
+                    </tbody> <!-- Pendientes -->
+                    <tbody>
+                    <tr class="odd">
+                        <td>
+                            <h5><a href="#">Coevaluación 5</a></h5>
+                        </td>
+                        <td>
+                            16 de Octubre a las 00:00
+                        </td>
+                        <td>
+                            28 de Octubre a las 23:59
+                        </td>
+                        <td colspan="2" align="center">
+                            <a href="#">Contestar</a>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td>
+                            <h5><a href="#">Coevaluación 4</a></h5>
+                        </td>
+                        <td>
+                            10 de Octubre a las 00:00
+                        </td>
+                        <td>
+                            22 de Octubre a las 23:59
+                        </td>
+                        <td colspan="2" align="center">
+                            <a href="#">Contestar</a>
+                        </td>
+                    </tr>
+                    <tr class="odd">
+                        <td>
+                            <h5><a href="#">Coevaluación 3</a></h5>
+                        </td>
+                        <td>
+                            1 de Octubre a las 00:00
+                        </td>
+                        <td>
+                            20 de Octubre a las 23:59
+                        </td>
+                        <td colspan="2" align="center">
+                            <a href="#">Contestar</a>
+                        </td>
+                    </tr>
+                    </tbody> <!-- Coeavaluaciones Pendientes-->
+                    <thead class="thead-dark">
+                    <tr class="odd">
+                        <th class="string" scope="col"><h2>Contestadas</h2></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="pendientes table-secondary even">
+                        <td><h3>Nombre</h3></td>
+                        <td><h3>Fecha Inicio</h3></td>
+                        <td><h3>Fecha Fin</h3></td>
+                        <td><h3>Estado</h3></td>
+                        <td align="center"><h3>Opciones</h3></td>
+                    </tr>
+                    </tbody> <!-- Contestadas -->
+                    <tbody>
+                    <tr class="odd">
+                        <td>
+                            <h5><a href="#">Coevaluación 2</a></h5>
+                        </td>
+                        <td>
+                            1 de Octubre a las 00:00
+                        </td>
+                        <td>
+                            14 de Octubre a las 23:59
+                        </td>
+                        <td>
+                            No Publicada
+                        </td>
+                        <td align="center">
+                            <a href="#">Ver</a>
+                        </td>
+                    </tr>
+                    <tr class="even">
+                        <td>
+                            <h5><a href="#">Coevaluación 1</a></h5>
+                        </td>
+                        <td>
+                            10 de Septiembre a las 00:00
+                        </td>
+                        <td>
+                            22 de Septiembre a las 23:59
+                        </td>
+                        <td>
+                            Publicada
+                        </td>
+                        <td align="center">
+                            <a href="#">Ver</a>
+                        </td>
+                    </tr>
+                    </tbody> <!-- Coeavaluaciones Contestadas-->
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
